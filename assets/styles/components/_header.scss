@@ -1,0 +1,9 @@
+@import '../abstract/variaveis';
+
+.cabecalho{
+    background-color: $cor-cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}

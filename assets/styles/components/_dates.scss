@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+
+.dates{
+    background: $verao;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: $fonte-principal;
+
+    .dates__img{
+
+    }
+
+    .dates__titulo{
+        font-size: $tamanho-titulo;
+        font-weight: 700;
+        margin: 2rem 0;
+        color: $cor-texto;
+        text-align: center;
+    }
+
+    .dates__texto{
+        color: $cor-texto;
+        font-size: $tamanho-texto + ($tamanho-texto/4);
+        padding: 0 1rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .comprar__ingresso{
+        background: $cor-cabecalho;
+        width: 80%;
+        height: 2.5rem;
+        color: $branco;
+        box-shadow: 1px 1px 0 #444444;
+        border-radius: 1rem;
+        font-weight: 700;
+        font-size: $tamanho-texto + ($tamanho-texto/4);
+        margin-top: 2rem;
+
+        &::after{
+            background: url('../../img/local_activity.svg');
+        }
+    }
+}
