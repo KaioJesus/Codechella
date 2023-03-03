@@ -1,15 +1,16 @@
 @import '../abstract/variaveis';
 
 .banner{
-    background: url('../../img/Banner.jpeg');
+    background-image: url("../../img/Banner.jpg") 27% center no-repeat;
+    min-height: 270px;
     background-size: cover;
     opacity: 0.7;
-    min-height: 350px;
 
     .banner__titulo {
         font-size: $tamanho-titulo;
         text-align: center;
         padding: 4rem 1.5rem;
+        font-family: $fonte-destaque;
         font-weight: 400;
     }
 }
