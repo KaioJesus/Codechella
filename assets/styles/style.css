@@ -11,10 +11,10 @@ body {
 }
 
 .banner {
-  background-image: url("../../img/Banner.jpg") 27% center no-repeat;
+  background: url(../../../assets/img/Banner.svg);
   min-height: 270px;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 1;
 }
 .banner .banner__titulo {
   font-size: 2rem;
@@ -62,7 +62,7 @@ body {
 
 .lista__atracoes {
   text-align: center;
-  margin: 1.5rem 0rem 4rem 0;
+  margin: 1.5rem 0rem 1rem 0;
   color: #444444;
 }
 .lista__atracoes h2 {
@@ -70,10 +70,18 @@ body {
   font-size: 2rem;
   margin: 2rem 0 3.5rem 0;
 }
-.lista__atracoes p {
+.lista__atracoes .atracoes-sabado {
   background: #DF9010;
   padding: 1rem 0;
-  margin: 0 3rem;
+  margin: 0 2.5rem;
+  color: white;
+  font-family: "Calistoga", sans-serif;
+  font-size: 2rem;
+}
+.lista__atracoes .atracoes-domingo {
+  background: #DF9010;
+  padding: 1rem 0;
+  margin: 0 1.5rem;
   color: white;
   font-family: "Calistoga", sans-serif;
   font-size: 2rem;
@@ -82,7 +90,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 .lista__atracoes .atracoes--2 {
-  margin: 2rem 0;
+  margin: 2rem 1rem;
 }
 .lista__atracoes h3 {
   margin: 2rem 0;
@@ -103,4 +111,22 @@ body {
   font-size: 2rem;
   margin: 1rem 0;
   font-weight: 500;
+}
+
+.container-rodape {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 3rem 0;
+}
+.container-rodape p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: center;
+  margin: 0.8rem 1.5rem;
+}
+.container-rodape .lista-redes {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

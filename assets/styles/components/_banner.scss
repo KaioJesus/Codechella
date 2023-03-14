@@ -1,10 +1,10 @@
 @import '../abstract/variaveis';
 
 .banner{
-    background-image: url("../../img/Banner.jpg") 27% center no-repeat;
+    background: url(../../../assets/img/Banner.svg);
     min-height: 270px;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 1;
 
     .banner__titulo {
         font-size: $tamanho-titulo;
