@@ -14,8 +14,14 @@
     </head>
     <body>
         <header class="cabecalho">
-            <a href="#"><img src="./img/logocodechella.svg" alt="Logo CodeChella"></a>
-            <img src="./img/menu.svg" alt="Menu hamburguer">
+            <a class="cabecalho-logo" href="#"><img src="./img/logocodechella.svg" alt="Logo CodeChella"></a>
+            <img class="cabecalho__menu-hamburguer" src="./img/menu.svg" alt="Menu hamburguer">
+            <ul class="cabecalho__lista">
+                <li class="lista-item"><a href="">A experiência</a></li>
+                <li class="lista-item"><a href="">Mapa de Setores</a></li>
+                <li class="lista-item"><a href="">Informações</a></li>
+                <li class="lista-item"><a href="">Ingresso</a></li>
+            </ul>
         </header>
 
         <section class="banner">
@@ -27,7 +33,7 @@
             <h2 class="dates__titulo">&lt; 11 e 12 de Março &gt; Aluródromo de São Paulo</h2>
             <p class="dates__texto">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
             
-            <button class="comprar__ingresso">Comprar ingresso! </button>
+            <button class="comprar__ingresso">Comprar ingresso! <img src="(../assets/img/ticket.svg);" alt="logo ticket"> </button>
         </section>
 
         <section class="lista__atracoes">
@@ -55,6 +61,7 @@
                     <h6>Agnostic Front-end</h6>
                     <h6>SlipkNode</h6>
                     <h6>Pink Flutter</h6>
+                    <h6>Kiss</h6>
                 </div>
     
             </div>
@@ -77,6 +84,7 @@
                     <h5>The Bootstrap Boys</h5>
                     <h5>Json Derulo</h5>
                     <h5>CloudPlay</h5>
+                    <h5>Dev Lovato</h5>
                 </div>
 
                 <div class="atracoes--2">
@@ -87,17 +95,19 @@
     
             </div>
 
-            <img src="./img/multidao.svg" alt="Multidão de pessoas no concerto">
+            <img class="atracoes__img" src="./img/multidao.svg" alt="Multidão de pessoas no concerto">
         </section>
         <footer class="container-rodape">
             <img src="./img/Logocodechella2.svg" alt="Logo CodeChella">
-            <p>Acesse nossas redes</p>
-            <ul class="lista-redes">
-                <li><img src="img/whatsapp.svg" alt="Logo whatsapp"></li>
-                <li><img src="img/twitch.svg" alt="Logo Twitch"></li>
-                <li><img src="img/instagram.svg" alt="Logo instagram"></li>
-                <li><img src="img/twitter.svg" alt="Logo Twitter"></li>
-            </ul>
+            <div class="container-redes">
+                <p>Acesse nossas redes:</p>
+                <ul class="lista-redes">
+                    <li><img src="img/whatsapp.svg" alt="Logo whatsapp"></li>
+                    <li><img src="img/twitch.svg" alt="Logo Twitch"></li>
+                    <li><img src="img/instagram.svg" alt="Logo instagram"></li>
+                    <li><img src="img/twitter.svg" alt="Logo Twitter"></li>
+                </ul>
+            </div>
             <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
         </footer>
     </body>

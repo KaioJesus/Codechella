@@ -7,10 +7,6 @@
     padding: 1rem;
     font-family: $fonte-principal;
 
-    .dates__img{
-
-    }
-
     .dates__titulo{
         font-size: $tamanho-titulo;
         font-weight: 700;
@@ -29,7 +25,7 @@
 
     .comprar__ingresso{
         background: $cor-cabecalho;
-        width: 80%;
+        width: 256px;
         height: 3rem;
         color: $branco;
         box-shadow: 0.3rem 0.3rem 0 #444444;
@@ -38,8 +34,26 @@
         font-size: $tamanho-texto + ($tamanho-texto/4);
         margin-top: 2rem;
 
-        &::after{
-            background: url('../../img/local_activity.svg');
-        }
     }
+}
+
+@media screen and (min-width: 768px) {
+   .dates{
+       .dates__img{
+           width: 600px;
+           height: 380px;
+           object-fit: cover;
+           border-radius: 0.5rem;
+       }
+   
+       .dates__titulo{
+           margin: 2rem 9rem;
+           line-height: 2.2rem;
+       }
+
+       .dates__texto{
+        padding: 0 3rem;
+        line-height: 2.5rem;
+    }
+   }
 }
