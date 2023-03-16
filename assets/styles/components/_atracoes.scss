@@ -90,10 +90,6 @@
                 justify-content: center;
                 column-gap: 2rem;
                 margin: 0rem 2rem;
-
-                :nth-child(3){
-                   
-                }
             }
         }
 
@@ -106,10 +102,37 @@
             font-size: $tamanho-titulo + 1rem;
         }
 
-        img{
+        .atracoes__img{
             width: 100%;
             height: 330px;
             object-fit: cover;
+        }
+
+        .atracoes__img-pc{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1368px) {
+    .lista__atracoes{
+        .atracoes-sabado{
+            margin: 0 31.5rem;
+        }
+        .atracoes-domingo{
+            margin: 0 29.5rem;
+        }
+
+        h3{
+            margin: 2rem 0 1rem 0;
+        }
+
+        .atracoes__img{
+           display: none;
+        }
+
+        .atracoes__img-pc{
+            display: block;
         }
     }
 }

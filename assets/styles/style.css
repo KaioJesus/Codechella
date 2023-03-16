@@ -35,9 +35,20 @@ body {
     font-family: "Raleway", sans-serif;
   }
 }
+@media screen and (min-width: 1368px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cabecalho .cabecalho-logo {
+    padding: 0;
+  }
+}
 .banner {
   background: url(../../../assets/img/Banner.svg);
-  min-height: 270px;
+  min-height: 400px;
   background-size: cover;
   opacity: 1;
 }
@@ -51,7 +62,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner {
-    min-height: 600px;
+    min-height: 768px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .banner {
+    background: url(../../../assets/img/bannerpc.svg) no-repeat;
+    min-height: 434px;
   }
 }
 .dates {
@@ -85,6 +102,7 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   margin-top: 2rem;
+  text-align: centers;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,7 +111,7 @@ body {
     height: 380px;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
   .dates .dates__titulo {
     margin: 2rem 9rem;
@@ -102,6 +120,25 @@ body {
   .dates .dates__texto {
     padding: 0 3rem;
     line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .dates {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+  }
+  .dates .container__informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .dates .container__informacoes .dates__titulo {
+    margin-right: 5rem;
+  }
+  .dates .container__informacoes .dates__texto {
+    padding: 0 5rem 0 5rem;
   }
 }
 .lista__atracoes {
@@ -188,11 +225,31 @@ body {
     font-family: "Calistoga", sans-serif;
     font-size: 3rem;
   }
-  .lista__atracoes img {
+  .lista__atracoes .atracoes__img {
     width: 100%;
     height: 330px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .lista__atracoes .atracoes__img-pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .lista__atracoes .atracoes-sabado {
+    margin: 0 31.5rem;
+  }
+  .lista__atracoes .atracoes-domingo {
+    margin: 0 29.5rem;
+  }
+  .lista__atracoes h3 {
+    margin: 2rem 0 1rem 0;
+  }
+  .lista__atracoes .atracoes__img {
+    display: none;
+  }
+  .lista__atracoes .atracoes__img-pc {
+    display: block;
   }
 }
 .container-rodape {
@@ -222,5 +279,10 @@ body {
   .container-redes .lista-redes {
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .container-rodape {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

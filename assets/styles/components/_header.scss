@@ -32,10 +32,22 @@
 
             .lista-item{
                 color: $branco;
-                font-size: 1.25rem;
+                font-size: $tamanho-texto + 0.25rem;
                 font-family: $fonte-principal;
             }
         }
 
     }
+}
+
+@media screen and (min-width: 1368px) {
+  .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   .cabecalho-logo{
+    padding: 0;
+   }
+  }
 }

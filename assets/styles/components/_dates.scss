@@ -33,6 +33,7 @@
         font-weight: 700;
         font-size: $tamanho-texto + ($tamanho-texto/4);
         margin-top: 2rem;
+        text-align: centers;
 
     }
 }
@@ -43,7 +44,7 @@
            width: 600px;
            height: 380px;
            object-fit: cover;
-           border-radius: 0.5rem;
+           border-radius: 1rem;
        }
    
        .dates__titulo{
@@ -57,3 +58,26 @@
     }
    }
 }
+
+@media screen and (min-width: 1368px) {
+    .dates{
+        display: flex;
+        flex-direction: row;
+        margin: 0 1rem;
+
+        .container__informacoes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 1rem;
+
+            .dates__titulo{
+                margin-right: 5rem;
+            }
+
+            .dates__texto{
+                padding: 0 5rem 0 5rem;
+            }
+        }
+    }
+ }
