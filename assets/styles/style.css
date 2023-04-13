@@ -102,7 +102,11 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   margin-top: 2rem;
-  text-align: centers;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.dates .comprar__ingresso::after {
+  background-image: url(../../../assets/img/ticket.svg);
 }
 
 @media screen and (min-width: 768px) {
